@@ -2,7 +2,7 @@ function Worktimer() {
     
     this.timer = null;
     
-    this.saveData = function(storage, container, override_data) {        
+    this.saveData = function(storage, container, override_data) {
         var data = {
             start_time: this.timer.getStartTime().format('HH:MM'),
             stop_time: this.timer.getStopTime().format('HH:MM'),
@@ -63,8 +63,8 @@ $(function(){
     log_storage = new FileStorage(Titanium.Filesystem.getUserDirectory()+s+'worktimer'+s+'logs', '.log');
     
 
-
-    notification = Titanium.Notification.createNotification();
+    
+    notification = Titanium.Notification.createNotification(this);
     notification.setTimeout(3);
     notification.setTitle('Worktimer');
     
@@ -89,7 +89,7 @@ $(function(){
     // Save to file
     EventDispatcher.addListener(timer, 'stop', function(timer){
         if(timer.getDuration().getTime() < 60000) {
-            st.addInfo("Ignoring, time too short");
+            st.addInfo("Short time, skipping data save");
             return;
         }
         saved = worktimer.saveData(log_storage, log_file_name);
@@ -114,6 +114,7 @@ $(function(){
     
     worktimer.timer = timer;
     worktimer.loadDatas();
+    
 });
 
 
