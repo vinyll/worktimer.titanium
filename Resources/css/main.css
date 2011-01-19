@@ -1,0 +1,54 @@
+html {
+    font-size:  12px;
+    background: -webkit-gradient(linear,0 0,0 100%, from(#FFF), to(#DDD));
+    overflow:   hidden;
+}
+
+label {
+    font-weight:    bold;
+    color:          #666;
+}
+
+#clock {
+    font-size:      40px;
+    font-weight:    bold;
+    float:          right;
+}
+
+#start_button,#stop_button {
+    float:  left;
+    width:  100px;
+    height: 40px;
+    font-weight:    bold;
+    font-size:      20px;
+}
+
+
+#project_field, #comment_field {
+    clear:  both;
+}
+
+
+#project_field, #task_field {
+    float: left;
+    width:  47%;
+}
+
+#project_field select, #task_field select {
+    width:  98%;
+}
+
+#refresh_button {
+    width:  2%;
+    float:  left;
+    margin-top: 17px;
+}
+
+
+#time_fields {
+    clear:  both;
+    border-top: 1px solid #999;
+}
+#start_time, #stop_time {
+    width:  50px;
+}

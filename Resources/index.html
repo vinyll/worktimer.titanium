@@ -1,0 +1,48 @@
+<html>
+<head>
+    <link href="/css/main.css" type="text/css" rel="stylesheet" />
+    <script src="/js/jquery.min.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script src="/js/Date.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script src="/js/EventDispatcher.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script src="/js/Timer.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script src="/js/FileStorage.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script src="/js/Status.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script src="/js/statusbar.jquery.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script src="/js/main.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+</head>
+
+<body>
+
+<div id="clock"><span id="hours_display">00</span>:<span id="minutes_display">00</span></div>
+
+<button id="start_button" data-action="start">Start</button>
+<button id="stop_button" data-action="stop">Stop</button>
+
+<div class="field" id="project_field">
+    <label for="project">Project</label>
+    <select id="project">
+    </select>
+</div>
+
+<div class="field" id="task_field">
+    <label for="task">Task</label>
+    <select id="task">
+    </select>
+</div>
+
+<button id="refresh_button" title="refresh fields">Refresh</button>
+
+<div id="comment_field">
+    <label for="comment">Comment</label>
+    <input type="text" id="comment" />
+</div>
+
+<div id="time_fields">
+    <label for="start_time">From</label><input type="time" id="start_time" />
+    <label for="stop_time">To</label><input type="time" id="stop_time" />
+    <button id="add_log">Add to log</button>
+</div>
+
+
+</body>
+</html>

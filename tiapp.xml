@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ti:app xmlns:ti='http://ti.appcelerator.org'>
+<!-- These values are edited/maintained by Titanium Developer -->
+<id>es.particul.worktimer</id>
+<name>Worktimer</name>
+<version>1.0</version>
+<publisher>Vincent Agnano</publisher>
+<url>http://particul.es</url>
+<icon>worktimer.png</icon>
+<copyright>2011 by Vincent Agnano</copyright>
+<!-- Window Definition - these values can be edited -->
+<window>
+<id>initial</id>
+<title>Worktimer</title>
+<url>app://index.html</url>
+<width>300</width>
+<max-width>300</max-width>
+<min-width>300</min-width>
+<height>160</height>
+<max-height>160</max-height>
+<min-height>160</min-height>
+<fullscreen>false</fullscreen>
+<resizable>false</resizable>
+<chrome scrollbars="true">true</chrome>
+<maximizable>false</maximizable>
+<minimizable>true</minimizable>
+<closeable>true</closeable>
+</window>
+</ti:app>
