@@ -2,14 +2,14 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <guid>e540c034-95ca-40cf-82c9-64c3dcc9eb3f</guid>
     <!-- These values are edited/maintained by Titanium Developer -->
-    <id>es.particul.worktimer</id>
+    <id>fr.scopyleft.worktimer</id>
     <name>Worktimer</name>
     <version>1.0</version>
     <publisher>Vincent Agnano</publisher>
-    <url>http://particul.es</url>
+    <url>http://scopyleft.fr</url>
     <description>Manage your time on projects !</description>
     <icon>worktimer.png</icon>
-    <copyright>2011 by Vincent Agnano</copyright>
+    <copyright>2013 by Vincent Agnano</copyright>
     <!-- Window Definition - these values can be edited -->
     <window>
         <id>initial</id>
