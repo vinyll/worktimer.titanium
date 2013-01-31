@@ -92,7 +92,6 @@ $(function(){
             st.addInfo("Short time, skipping data save");
             return;
         }
-        alert('save')
         saved = worktimer.saveData(log_storage, log_file_name);
         saved ? st.addInfo("Data saved successfully") : st.addError("Error occured while trying to save data");
     });
